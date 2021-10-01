@@ -1,0 +1,124 @@
+@import 'nav.css';
+
+body {
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  
+}
+.footer{
+	position: absolute;
+	color: white;
+	bottom: -25em;
+	padding-bottom: 1em;
+}
+.look-hed{
+  position: relative;
+  float: top;
+  margin-top: -1%;
+  margin-bottom: 2%;
+  left: 39%;
+  color: white;
+}
+.produit {
+  position:absolute;
+  float: top;
+  left: 25%;
+  width: 49%;
+  top: 16%;
+  border: solid 10px;
+  border-color: #15172b;
+  border-radius: 20px;
+  background-color: #15172b;
+  padding: 1%;
+  flex: 1;
+
+}
+.lookbook-gallery .a11y-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .lookbook-gallery .a11y-only.focusable:active, .lookbook-gallery .a11y-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+  .lookbook-gallery img {
+    width: 100%;
+    height: auto;
+    display: grid;
+    background: #ddd;
+  }
+  .lookbook-gallery .model {
+    margin: 0;
+    position: relative;
+  }
+  .lookbook-gallery .model .model--caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgba(42, 42, 44, 0.815);
+    padding: 0.35em 1.2em 0.25em 0.9em;
+    justify-self: start;
+  }
+  .lookbook-gallery .model .model--caption .model-hed {
+    font-size: 1.25em;
+    margin: 0.5em 0;
+    font-family: Lora, serif;
+  }
+  .lookbook-gallery .model .model--caption .model-hed a {
+    color: #fff;
+    text-decoration-color: rgba(255, 255, 255, .5);
+  }
+  .lookbook-gallery .model .model--caption p {
+    font-size: 0.9375em;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.5;
+    margin: 0 0 0.5em 0;
+  }
+  @media (min-width: 45em) {
+    .lookbook-gallery .lookbook-grid {
+      display: block;
+      flex-wrap: wrap;
+    }
+    .lookbook-gallery .model {
+      flex: 47.5%;
+      margin: 0.5%;
+    }
+  }
+  @media (min-width: 65em) {
+    .lookbook-gallery .model {
+      flex: 24.25% 0;
+      margin: 0.25%;
+    }
+    @supports ( display: grid ) {
+      .lookbook-gallery .lookbook-grid {
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: repeat(4, minmax(18%, 1fr));
+      }
+      .lookbook-gallery .model {
+        margin: 0;
+      }
+      .lookbook-gallery .model:nth-of-type(4n-1) {
+        grid-row-end: span 1;
+        grid-column-end: span 1;
+      }
+    }
+  }

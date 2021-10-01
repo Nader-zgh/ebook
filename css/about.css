@@ -1,0 +1,158 @@
+@import 'nav.css';
+body {
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    
+  }
+  .produit {
+    position:absolute;
+    float: top;
+    left: 25%;
+    width: 49%;
+    top: 16%;
+    border: solid 10px;
+    border-color: #15172b;
+    border-radius: 20px;
+    background-color: #15172b;
+    padding: 1%;
+    flex: 1;
+  
+  }
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Sacramento');
+
+
+
+ .grid-container {
+	 margin: auto;
+	 display: grid;
+	 justify-content: center;
+	 max-width: 75em;
+}
+ .card {
+	 grid-row: auto / span 1;
+	 grid-column: auto / span 1;
+	 background-color: white;
+	 box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+}
+ .card h1, .card h2, .card h3, .card h4, .card p {
+	 margin-top: 0;
+	 font-weight: normal;
+}
+ .card__image {
+	 height: 100%;
+	 max-height: 100%;
+	 
+	 max-width: 100%;
+	 display: flex;
+}
+ .card__image img {
+	 height: auto;
+	 min-height: 100%;
+	 max-height: 100%;
+	 width: 100%;
+	 
+}
+ .card__side-by-side {
+	 height: 100%;
+	 width: 100%;
+	 display: flex;
+	 flex-flow: row nowrap;
+}
+ .card__side-by-side--m {
+	 height: 100%;
+	 width: 100%;
+	 display: flex;
+	 flex-flow: column nowrap;
+}
+ .card__content {
+	 background-color:#15172b ;
+	 color: white;
+	 padding: 1.6rem;
+}
+ .card__button {
+	 margin: 1.6rem 0;
+	 text-align: center;
+	 padding: 0.8rem 1.6rem;
+	 background: none;
+	 border: 0.5px solid #777;
+	 border-radius: 2px;
+}
+ .card__button:hover {
+	 border-color: #08d;
+}
+
+ .card--featured {
+	 grid-row: auto / span 3;
+	 grid-column: auto / span 2;
+}
+ .card--2x {
+	 grid-row: auto / span 2;
+	 grid-column: auto / span 2;
+}
+ .card--vertical {
+	 grid-row: auto / span 2;
+}
+.quote{
+	grid-column: auto / 4;
+}
+ .card--horizontal {
+	 grid-column: auto / span 2;
+}
+ .card--frameless {
+	 background-color: transparent;
+	 box-shadow: none;
+}
+ .padding-large {
+	 padding: 3.2rem;
+}
+ .padding-large--l {
+	 padding: 1.6rem;
+}
+ .big-script {
+	 height: 100%;
+	 display: flex;
+	 flex-flow: column nowrap;
+	 justify-content: center;
+	 align-items: center;
+	 font-family: 'Sacramento', sans-serif;
+	 font-size: 3.5em;
+	 line-height: 1.15em;
+	 text-align: center;
+}
+ .big-script p {
+	 margin: 0;
+}
+ @media (max-width: 480px) {
+	 .grid-container {
+		 grid-template-columns: 1fr 1fr;
+		 
+	}
+	 .card {
+		 min-height: 12.8rem;
+	}
+}
+ @media (min-width: 627px) {
+	 
+	 .card__side-by-side--m {
+		 flex-flow: row nowrap;
+	}
+	 .card__side-by-side--m img {
+		 min-height: 100%;
+	}
+	 .card--featured {
+		 grid-row: auto / span 2;
+		 grid-column: -1;
+	}
+}
+.footer{
+	position: absolute;
+	color: white;
+	bottom: -55em;
+	padding-bottom: 1em;
+}
+ p{
+	 font-size: 1.5vw;
+ }
